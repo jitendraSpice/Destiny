@@ -1,0 +1,137 @@
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Empower Your Business with the Best Development Programs</h1>
+        <p>ISO Certification, Excel Training, Personality Development and more.</p>
+        <a href="#" class="cta-btn">Get Started</a>
+    </div>
+</section>
+
+ <!-- Services Section -->
+ <section class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <span class="material-icons">verified</span>
+                <h3>ISO Certification</h3>
+                <p>Comply with international standards for better business credibility.</p>
+            </div>
+            <div class="service-card">
+                <span class="material-icons">table_view</span>
+                <h3>Excel Training</h3>
+                <p>Learn advanced data handling techniques to increase productivity.</p>
+            </div>
+            <div class="service-card">
+                <span class="material-icons">person</span>
+                <h3>Personality Development</h3>
+                <p>Develop leadership skills and boost your confidence in business.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <span class="material-icons">star</span>
+                <h3>Quality Service</h3>
+                <p>We deliver top-notch services with a focus on quality.</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-icons">support</span>
+                <h3>24/7 Support</h3>
+                <p>Our team is available around the clock for your needs.</p>
+            </div>
+            <div class="feature-card">
+                <span class="material-icons">security</span>
+                <h3>Secure & Reliable</h3>
+                <p>Your data is safe with our robust security measures.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter your name" formControlName="name" required>
+          </mat-form-field>
+      
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Enter your email" formControlName="email" required>
+          </mat-form-field>
+      
+          <mat-form-field appearance="outline">
+            <mat-label>Message</mat-label>
+            <textarea matInput placeholder="Enter your message" formControlName="message" rows="4" required></textarea>
+          </mat-form-field>
+      
+          <button mat-raised-button color="primary" type="submit">Send Message</button>
+        </form>
+      </div>
+      
+</section>
+
+ <!-- Testimonials Section -->
+ <section class="testimonials">
+    <div class="container">
+        <h2>Testimonials</h2>
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card">
+                        <!-- <p>"The ISO certification process was smooth and professional."</p>
+                        <p class="client-name">- John Doe, ABC Corp</p> -->
+                        <img  src="../../../assets/images/Company Profile DSS-images-20.jpg" alt="slide" title="Title1">
+                    </div>
+                </ng-template> 
+                <ng-template carouselSlide>
+                    <div class="testimonial-card">
+                        <!-- <p>"The Excel training has transformed the way we handle data."</p>
+                        <p class="client-name">- Sarah Lee, Data Inc.</p> -->
+                        <img src="../../../assets/images/Company Profile DSS-images-21.jpg" alt="slide.alt" title="Title2">
+                    </div>
+                </ng-template> 
+
+                <ng-template carouselSlide>
+                    <div class="testimonial-card">
+                        <!-- <p>"The personality development sessions helped me grow as a leader."</p>
+                        <p class="client-name">- Michael Smith, XYZ Ltd.</p> -->
+                        <img src="../../../assets/images/Company Profile DSS-images-22.jpg" alt="slide.alt" title="Title3">
+                    </div>
+                </ng-template> 
+                <ng-template carouselSlide>
+                    <div class="testimonial-card">
+                        <!-- <p>"The ISO certification process was smooth and professional."</p>
+                        <p class="client-name">- John Doe, ABC Corp</p> -->
+                        <img src="../../../assets/images/Company Profile DSS-images-23.jpg" alt="slide.alt" title="Title4">
+                    </div>
+                </ng-template> 
+                <ng-template carouselSlide>
+                    <div class="testimonial-card">
+                        <!-- <p>"The Excel training has transformed the way we handle data."</p>
+                        <p class="client-name">- Sarah Lee, Data Inc.</p> -->
+                        <img src="../../../assets/images/Company Profile DSS-images-24.jpg" alt="slide.alt" title="Title5">
+                    </div>
+                </ng-template> 
+
+                <ng-template carouselSlide>
+                    <div class="testimonial-card">
+                        <!-- <p>"The personality development sessions helped me grow as a leader."</p>
+                        <p class="client-name">- Michael Smith, XYZ Ltd.</p> -->
+                        <img src="../../../assets/images/Company Profile DSS-images-25.jpg" alt="slide.alt" title="Title6">
+                    </div>
+                </ng-template> 
+                 
+                E:\theDestiny\src\assets\images\Company Profile DSS-images-20.jpg
+            </owl-carousel-o>
+       
+    </div>
+</section>

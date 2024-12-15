@@ -1,0 +1,241 @@
+ 
+.hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGJ1c2luZXNzJTIwZGV2ZWxvcG1lbnR8ZW58MHx8fHwxNjE3NzUwNTMw&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    z-index: 1;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0;
+    position: relative;
+    z-index: 121;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    position: relative;
+    z-index: 121;
+}
+
+.hero .cta-btn {
+    background-color: #ff9800;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+}
+
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .material-icons {
+    font-size: 50px;
+    color: #ff9800;
+}
+.services, .features, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2, .features h2, .contact h2 {
+    margin-bottom: 20px;
+}
+
+.service-cards, .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card, .feature-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .material-icons, .feature-card .material-icons {
+    font-size: 50px;
+    color: #ff9800;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.testimonials {
+    background-color: #eee;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 20px;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .client-name {
+    font-style: italic;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons .material-icons {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem; /* Adjusted font size for tablets */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Adjusted font size for tablets */
+    }
+    .contact form {
+        padding: 0 15px;
+    }
+    .services .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.2rem; /* Reduced font size for mobile phones */
+    }
+
+    .hero p {
+        font-size: 0.9rem; /* Reduced font size for mobile phones */
+    }
+
+    .hero .cta-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    h2, h3{
+        font-size: 33px;
+    }
+}
+

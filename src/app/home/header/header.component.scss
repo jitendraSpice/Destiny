@@ -1,0 +1,54 @@
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    .bg-orange{
+      background-color: #ff9800;
+    }
+  }
+ 
+  .logo-cmpny{
+    width:  172px;
+    margin-top: 57px;
+  }
+  .header-left .logo {
+    height: 40px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-right .mat-form-field {
+    min-width: 200px;
+  }
+  
+  .create-ticket-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .header-right {
+      display: none; /* Hide desktop items on mobile */
+    }
+  
+    .mobile-menu {
+      position: relative;
+    }
+  
+    .sidenav {
+      width: 250px;
+    }
+  
+    .sidenav button {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  

@@ -1,0 +1,65 @@
+<mat-toolbar color="primary" class="app-header">
+    <span class="header-left">
+        <a routerLink="/">
+            <img src="../../../assets/images/logiSign.png" width="150px" alt="Logo" class="logo-cmpny">
+        </a>
+
+    </span>
+
+    <span class="header-right" *ngIf="!isMobile">
+        <!-- Project Dropdown -->
+        <button mat-button class="desktop-only" routerLink="/">
+            <mat-icon>home</mat-icon>
+            Home
+        </button>
+        <button mat-button class="desktop-only" routerLink="about">
+            <mat-icon>info</mat-icon>
+            About us
+        </button>
+        <button mat-button class="desktop-only" routerLink="/">
+            <mat-icon>build</mat-icon>
+            Services
+        </button>
+        <button mat-button class="desktop-only" routerLink="/">
+            <mat-icon>build</mat-icon>
+            Testimonials
+        </button>
+
+        <a mat-flat-button  routerLink="contact" class="bg-orange">
+            <mat-icon>contact_mail</mat-icon>
+            Contact Us</a>
+
+    </span>
+
+    <!-- Mobile Menu Button -->
+    <button *ngIf="isMobile" mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+        <!-- Project Dropdown -->
+        <button mat-menu-item class="desktop-only" routerLink="/">
+            <mat-icon>home</mat-icon>
+            Home
+        </button>
+        <button mat-menu-item class="desktop-only" routerLink="about">
+            <mat-icon>info</mat-icon>
+            About us
+        </button>
+        <button mat-menu-item class="desktop-only" routerLink="/">
+            <mat-icon>build</mat-icon>
+            Services
+        </button>
+        <button mat-menu-item class="desktop-only" routerLink="/">
+            <mat-icon>build</mat-icon>
+            Testimonials
+        </button>
+
+        <a mat-button routerLink="contact" class="bg-orange">
+            <mat-icon>contact_mail</mat-icon>
+            Contact Us</a>
+
+
+
+    </mat-menu>
+</mat-toolbar>
